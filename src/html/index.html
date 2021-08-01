@@ -9,15 +9,19 @@
     <meta name="author" content="Syvita Guild" />
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="stylesheet" type="text/css" href="base.css" />
-    <script src='https://logs.syvita.org/js-sdk-loader/4956a10ef18b46639a286ee1fb5b4ae4.min.js' crossorigin="anonymous"></script>
+    <script src="/bundle.tracing.min.js" crossorigin="anonymous"></script>
+    <script src="/sentry.js" crossorigin="anonymous"></script>
     <script>
         document.documentElement.className = "js"
-        var supportsCssVars = function() {
+        var supportsCssVars = function () {
             var e,
                 t = document.createElement("style")
-            return (t.innerHTML = "root: { --tmp-var: bold; }"), document.head.appendChild(t), (e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)"))), t.parentNode.removeChild(t), e
+            return (t.innerHTML = "root: { --tmp-var: bold; }"), document.head.appendChild(t), (e = !!(window.CSS &&
+                    window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)"))), t.parentNode
+                .removeChild(t), e
         }
         supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.")
+        myUndefinedFunction();
     </script>
 </head>
 
