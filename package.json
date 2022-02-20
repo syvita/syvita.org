@@ -13,7 +13,7 @@
     "dependencies": {
         "@sentry/browser": "^6.10.0",
         "@sentry/tracing": "^6.10.0",
-        "dat.gui": "^0.7.6",
+        "dat.gui": "^0.7.8",
         "file-loader": "^4.2.0",
         "gl-matrix": "^3.4.3",
         "glslify": "^7.0.0",
